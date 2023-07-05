@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Kumbh Sans;
+}
+.container{
+    width: 100%;
+    padding: 0 30px;
+}
+/*-------NAV TEXT------*/
+#sneakers{
+    font-weight: 700;
+    font-size: 2rem;
+}
+a{
+    font-size: 1.1rem;
+}
+/* NAV BAR */
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    margin: 0 10px 0 10px;
+}
+.left-nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.right-nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right-nav-bar img{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+}
+.avatar{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: 0.9ms;
+}
+.avatar:hover{
+    border-radius: 50%;
+    border: solid 1px hsl(26, 100%, 55%);
+}
+
+hr{
+    background-color: hsl(219, 9%, 45%);
+}
+.hr-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .nav-hr {
+    height: 1px;
+    border: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+  }
+
+/*---- MODAL LAYOUT ---- */
+
+.modal{
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    top: 9%;
+    left: 77%;
+    visibility: hidden;
+    z-index: -1;
+}
+/* ---OPEN/CLOSE MODAL--- */
+.open-modal{
+    visibility: visible;
+    z-index: 1;
+}
+.modal-overlay h3{
+    padding: 15px 10px 15px 10px;
+}
+.modal-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.modal-text p{
+    font-weight: 100;
+    font-size: .9rem;
+    margin-bottom: 4px;
+}
+.modal-text h4{
+    font-weight: 100;
+    font-size: .8rem;
+}
+.total-amount{
+    font-weight: 700;
+}
+.modal-container{
+    padding: 20px 10px 20px 10px;
+}
+#checkout-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.checkout-div{
+    padding: 15px 0 0 0;
+}
+#checkout{
+    width: 100%;
+    height: 2.5rem;
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+}
+
+
+  /* MAIN LAYOUT */
+.main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space space-between;
+    gap: 30px;
+    padding: 20px 40px 10px 40px;
+    
+}
+#main-shoe{
+    width: auto;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.left-image-thumbnail{
+    display: flex;
+    justify-content: space-between;
+}
+.thumbnail-div{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.thumbnail-div:hover{
+    border: solid 3px hsl(26, 100%, 55%);
+    border-radius: 8px;
+}
+#thumbnail{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: grayscale(0);
+}
+#thumbnail:hover{
+    filter: grayscale(100%);
+}  
+
+/*--- RIGHT MAIN LAYOUT */
+.sneaker-company{
+    color: hsl(26, 100%, 55%);
+    padding-bottom: 20px;
+}
+
+.limited-edition{
+    padding-bottom: 40px;
+}
+.sneaker-text{
+    font-weight: 100;
+    padding-bottom: 20px;
+    color: hsl(219, 9%, 45%);
+}
+.right-dollar-main{
+    padding-bottom: 20px;
+}
+.right-dollar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right-dollar-percent{
+    width: 40px;
+    font-weight: bold;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    text-align: center;
+}
+.right-dollar-below{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: hsl(219, 9%, 45%);
+    text-decoration: line-through;
+}
+
+/* BUTTON LAYOUT */
+.main-button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.count-div{
+    display: flex;
+    background-color: hsl(230, 60%, 98%);
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    width: 8rem;
+    height: 3rem;
+}
+.count-div p{
+    font-weight: bolder;
+    
+}
+.count-button{
+    border: none;
+    background-color: hsl(230, 60%, 98%);
+    color: hsl(26, 100%, 55%);
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+}
+.add-to-cart{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 13rem;
+}
+.add-cart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 6px 10px 0px #ffe6d4;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.9ms;
+}
+.add-cart-btn:hover{
+    background-color: rgba(255, 125, 26, 0.5);
+}
+.add-cart-btn img {
+    filter: brightness(0) invert(1);
+  }
+  
+

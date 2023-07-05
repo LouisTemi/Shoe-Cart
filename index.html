@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Sneakers</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="left-nav-bar">
+                    <h1 id="sneakers">sneakers</h1>
+                    <a href="">Collections</a>
+                    <a href="">Women</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+            </div>
+            <div class="right-nav-bar">
+                <img src="/designs/icon-cart.svg" id="icon-cart" alt="">
+                <img src="designs/image-avatar.png" class="avatar" alt="">
+            </div>
+            <!----MODAL----->
+            <div class="modal">
+                <div class="modal-overlay">
+                    <h3>Cart</h3>
+                    <hr>
+                    <div class="modal-container">
+                        <div class="modal-text">
+                            <img src="designs/image-product-1-thumbnail.jpg" id="checkout-img" alt="">
+                            <div>
+                                <p>Fall Limited Edition Sneakers</p>
+                                <h4>$125 x <span class="number-shoes">3</span> <span class="total-amount">$375.00<span></h4>  
+                            </div>
+                            <img src="designs/icon-delete.svg" alt="" id="checkout-delete">
+                        </div>
+                        <div class="checkout-div">
+                            <button id="checkout">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END OF MODAL-->
+            <div class="hr-container">
+                <hr class="nav-hr">
+            </div>
+        </nav>
+
+        <div class="main-div">
+            <div class="left-main">
+                <div class="left-image-main">
+                    <img src="designs/image-product-1.jpg" id="main-shoe">
+                </div>  
+                <div class="left-image-thumbnail">
+                   <div class="thumbnail-div">
+                        <img src="designs/image-product-1-thumbnail.jpg" alt="" id="thumbnail" class="thumbnail one">
+                   </div>
+                   <div class="thumbnail-div">
+                         <img src="designs/image-product-2-thumbnail.jpg" alt="" id="thumbnail"
+                         class="thumbnail two">
+                   </div>
+                  <div class="thumbnail-div">
+                        <img src="designs/image-product-3-thumbnail.jpg" alt="" id="thumbnail"
+                        class="thumbnail three">
+                  </div>
+                  <div class="thumbnail-div">
+                     <img src="designs/image-product-4-thumbnail.jpg" alt="" id="thumbnail"
+                     class="thumbnail four">
+                  </div>
+                </div>
+                  
+                
+                
+            </div>
+    
+            <div class="right-main">
+                <div class="sneaker-company">
+                    <h6>SNEAKER COMPANY</h6>
+                </div>
+                <div class="limited-edition">
+                    <h2>Fall Limited Edition Sneakers</h2>
+                </div>
+                <div class="sneaker-text">
+                    <p>
+                        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                    </p>
+                </div>
+                <div class="right-dollar-main">
+                    <div class="right-dollar">
+                        <div class="right-dollar">
+                            <h2>$125.00</h2>
+                        </div>
+                        <div class="right-dollar-percent">
+                            <p>50%</p>
+                        </div>
+                    </div>
+                    <div class="right-dollar-below">
+                        <p>$250.00</p>
+                    </div>
+                </div>
+                
+                <div class="main-button">
+                   <div class="count-div">
+                        <button class="count-button decrease" id="minus-count">-</button>
+                        <p class="count" id="count-result">0</p>
+                        <button class="count-button increase" id="add-count">+</button>
+                   </div>
+                    <div class="add-to-cart">
+                        <button class="add-cart-btn">
+                            <img src="designs/icon-cart.svg" alt="shopping-cart">
+                            <p>Add to cart</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
